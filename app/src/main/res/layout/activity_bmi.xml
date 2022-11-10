@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.noexerciseweightlosst.wqxw.BMI"
+    tools:ignore="HardcodedText"
+    android:orientation="vertical"
+    android:background="@color/LightBlue">
+
+
+    <TextView
+        android:id="@+id/tvBMI"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="BMI\n----"
+        android:textSize="20pt"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="50dp" />
+
+    <TextView
+        android:id="@+id/textViewBMI"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text=""
+        android:gravity="center_horizontal"
+        android:textSize="20pt" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Status\n-------"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textSize="20pt" />
+
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text=""
+        android:gravity="center_horizontal"
+        android:textSize="20pt" />
+</LinearLayout>

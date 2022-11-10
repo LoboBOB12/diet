@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.noexerciseweightlosst.wqxw.MakeProfile"
+    tools:ignore="HardcodedText"
+    android:orientation="vertical"
+    android:background="@color/LightBlue">
+
+    <!-- TextView and EditText for Username-->
+    <TextView
+        android:id="@+id/pUN"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/etUN"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:inputType=""
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+
+    <!-- TextView and EditText for Password-->
+    <TextView
+        android:id="@+id/pPW"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Password"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <EditText
+        android:id="@+id/etPW"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <!-- TextView and EditText for Age-->
+    <TextView
+        android:id="@+id/pAge"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Age"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:inputType=""
+        android:textSize="24sp" />
+
+    <!-- TextView and EditText for Height-->
+    <TextView
+        android:id="@+id/pHeight"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Height (Meters)"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:textSize="24sp" />
+
+    <!-- TextView and EditText for Weight-->
+    <TextView
+        android:id="@+id/pWeight"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Weight (KG)"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:textSize="24sp" />
+
+    <!-- TextView and RadioGroup for Gender-->
+    <TextView
+        android:id="@+id/pGender"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Gender"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="120dp"
+        tools:ignore="RtlHardcoded">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:checked="true"
+            android:layout_gravity="center_vertical"/>
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Female"
+            android:layout_gravity="center_vertical"/>
+
+    </RadioGroup>
+
+    <!-- Button for Registering a profile -->
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Make Profile"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/black"/>
+
+
+
+    <!-- Would be slightly better to change to linear layout -->
+</LinearLayout>
